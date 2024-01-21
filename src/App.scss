@@ -1,5 +1,47 @@
-.App{
+.app{
     background-color: var(--primary-bg-white);
     font-family: var(--main-font);
-    color: red;
+    
+}
+.app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-text {
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 4rem;
+    }
+    @media screen and (max-width: 450px) {
+        font-size: 2rem;
+    }
+}
+
+.p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.5;
+    @media screen and (min-width: 2000px) {
+        font-size: 1.75rem;
+    }
+}
+
+.bold-text {
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: left;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 0.9rem;
+    }
 }

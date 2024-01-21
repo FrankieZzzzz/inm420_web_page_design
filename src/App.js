@@ -4,7 +4,7 @@ import {Header} from './container'
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className='app'>
       <Header />
     </div>
   )
