@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --main-font: 'Inter', sans-serif;
+    --fontW-extraBold: 900;
+    --fontW-bold: 700;
+    --fontW-normal: 400;
+    
+    --primary-btn-purple: #6B5CE7;
+    --primary-bg-white: #ffffff
+    
+    --iconColor-red:#FF7675;
+    --iconColor-green: #00B894;
+    --iconColor-pink:#E84293;
+    --iconColor-blue:#73BAFF;
+
+    --icon-yellow: #FDCB6E;
+    --icon-dark: #2D3436;
+
+    --text-lightBlue: #54EFC4;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
