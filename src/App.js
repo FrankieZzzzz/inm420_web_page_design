@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.scss';
-import {Header} from './container'
+import {Header,Detial} from './container'
 
 const App = () => {
   return (
     <div className='app'>
       <Header />
+      <Detial />
     </div>
   )
 }

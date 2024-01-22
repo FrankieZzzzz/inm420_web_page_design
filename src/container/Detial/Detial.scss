@@ -1,0 +1,13 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// div>div {
+//     @apply border grid place-content-center m-1;
+// }
+.app__detial-photoWall{
+    gap: 15px;
+    div{
+        border: 1px solid red
+    };
+}
