@@ -22,10 +22,10 @@ function classNames(...classes) {
 
 function Header() {
   return (
-    <Disclosure as="nav" className="bg-white shadow-lg">
+    <Disclosure as="nav" className="bg-white shadow-lg z-20">
       {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+        <> 
+          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 ">
             <div className="relative flex h-20 items-center justify-between">
               {/* Mobile menu button*/}
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">

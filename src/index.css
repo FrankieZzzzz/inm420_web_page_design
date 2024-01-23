@@ -6,6 +6,7 @@
 :root{
     --main-font: 'Inter', sans-serif;
     --fontW-extraBold: 900;
+    --fontW-bolder: 800;
     --fontW-bold: 700;
     --fontW-normal: 400;
     
@@ -21,10 +22,17 @@
     --icon-dark: #2D3436;
 
     --text-lightBlue: #54EFC4;
+
+    
 }
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+}
+.center-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
