@@ -9,7 +9,7 @@ import iconLike from '../../assets/images/icon-like.png';
 
 
 function Detail() {
-  const DetailContent = [
+  const detailContent = [
     {
       icon: iconSupport,
       name: 'Support',
@@ -49,7 +49,7 @@ function Detail() {
         </div>
         <div>
           <ul className="px-2 lg:px-8 mx-auto mt-10 sm:mt-2 grid grid-cols-2 gap-x-4 gap-y-8 pt-6 sm:pt-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            {DetailContent.map((item,index) => (
+            {detailContent.map((item,index) => (
               <li key={index} className="flex max-w-md flex-col items-start justify-between">
                 <img src={item.icon} alt={item.alt} className='max-w-10'/>
               <h3 className="mt-5 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">

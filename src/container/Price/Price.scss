@@ -1,0 +1,17 @@
+.app__price-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--icon-grey);
+    border-radius: 50%;
+
+    // @media screen and (min-width: 768px) {
+    //     margin-left: 28px;
+    // }
+
+}
+.app__price-cardBtn{
+    background: var(--icon-yellow);
+}
+.app__price-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
