@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.scss';
-import {Header,Detial} from './container'
+import {Header,Detail,Hero} from './container'
 
 const App = () => {
   return (
     <div className='app'>
       <Header />
-      <Detial />
+      <Hero />
+      <Detail />
     </div>
   )
 }

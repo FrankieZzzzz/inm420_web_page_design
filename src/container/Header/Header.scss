@@ -10,6 +10,9 @@
     height: 5px;
     background: var(--icon-yellow);
     border-radius: 50%;
-
-    margin-left: 28px;
+        margin-left: 0px;
+    @media screen and (min-width: 768px) {
+        margin-left: 28px;
+    }
+    
 }

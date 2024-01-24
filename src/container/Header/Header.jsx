@@ -25,7 +25,7 @@ function Header() {
     <Disclosure as="nav" className="bg-white shadow-lg z-20">
       {({ open }) => (
         <> 
-          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 ">
+          <div className=" max-w-7xl px-3 sm:px-4 lg:px-12 xl:max-w-screen-xl mx-auto">
             <div className="relative flex h-20 items-center justify-between">
               {/* Mobile menu button*/}
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">
@@ -41,8 +41,7 @@ function Header() {
               <div>
                 <span><FontAwesomeIcon icon={faTable} className='app__nav-gridIcon hidden sm:inline'/></span>
                 <span className='text-2xl sm:font-semibold font-medium font-px-4 text-stone-700 px-4'>Grid</span>
-
-                </div>
+              </div>
               {/* hearder nav */}
               <div className="flex flex-1 items-center justify-center sm:justify-items-center">
                 <div className="hidden sm:ml-6 sm:block">
@@ -53,7 +52,7 @@ function Header() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'text-stone-700 font-medium' : 'text-indigo-600 ',
-                          'rounded-md  py-2 lg:text-md text-sm font-light flex items-center'
+                          'rounded-md py-2 lg:text-md text-xs font-light flex items-center'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -62,7 +61,7 @@ function Header() {
                           classNames('app__nav-dot',
                           item.name === 'Contact us' ? 'hidden':'', 
                           index === navigation.length - 1 ? 'last-dot': '',
-                          'xl:invisible'
+                          'invisible md:visible'
                           )}></span>
                       </a>
                       
@@ -72,7 +71,7 @@ function Header() {
                 </div>
               </div>
               <div>
-                <a href="#/" class="rounded-full bg-indigo-600 px-7 py-3 me-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign In</a>
+                <a href="#/" class="rounded-full bg-indigo-600 px-7 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign In</a>
               </div>
             </div>
           </div>
