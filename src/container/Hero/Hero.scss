@@ -9,19 +9,24 @@
 .app__hero-title{
     width: 100%;
 }
-.app__hero-photoBox{
-    @media screen and (max-width:1200px) {
-        width: 800px;
-    }
-}
+
 .app__hero-photoWall{
     display: grid;
-    grid-template-columns: repeat(18, minmax(0, 80px));
-    grid-template-rows: repeat(12, minmax(0, 50px));
     gap: 15px;
-    div{
-        border-radius: 12px;
-    };
+    grid-template-columns: repeat(18, 80px);
+    grid-template-rows: repeat(12, 1fr);
+    margin-left: -200%;
+    div {
+            border-radius: 12px;
+        };
+    @media screen and (min-width: 768px){
+        grid-template-columns: repeat(18, 50px);
+        grid-template-rows: repeat(12, 1fr);
+        margin-left: 0%;
+    }
+    
+    
+    
 }
 .grid-box-2{
     background-image: url(../../assets/images/image2.jpg);

@@ -19,7 +19,7 @@ function Hero() {
 
         {/* photo wall */}
         <div className='app__hero-photoBox  mx-auto overflow-hidden mt-8'>
-            <div class="app__hero-photoWall ">
+            <div class="app__hero-photoWall overflow-hidden">
               <div class="col-span-5 row-span-2 invisible sm:visible grid-box-1">
                 <p>Use mixed grid with imagery, replace with your own photos and descriptions</p>
               </div>

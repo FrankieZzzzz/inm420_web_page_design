@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {Header,Detail,Hero,Price} from './container'
+import {Header,Detail,Hero,Price,Footer} from './container'
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <Hero />
       <Detail />
       <Price />
+      <Footer />
     </div>
   )
 }

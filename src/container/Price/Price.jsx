@@ -42,7 +42,7 @@ function Price() {
         {/* cards */}
         <div className='mx-auto mt-12 sm:mt-2 lg:mx-0 lg:flex lg:justify-around px-2 lg:px-0'>
           {contentList.map(({type,price,option,topButtonText,buttonText},index) => (
-            <div key={index} className='rounded-2xl ring-1 ring-gray-200 app__price-card w-96  lg:mx-0'>
+            <div key={index} className='rounded-2xl ring-1 ring-gray-200 app__price-card w-96 mx-auto lg:mx-0'>
               {/* title */}
               <div className='flex items-center justify-between px-6 pt-4'>
                 <h5 className='font-semibold text-lg'>{type}</h5>
