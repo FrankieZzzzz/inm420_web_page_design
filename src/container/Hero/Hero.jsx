@@ -6,8 +6,8 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 function Hero() {
   return (
-    <>
-      <section className='app__hero mx-auto z-10 mb-48 max-w-7xl px-2 sm:px-4 lg:px-12 xl:max-w-screen-xl'>
+    <section className='app__hero-section'>
+      <div className='app__hero mx-auto z-10 mb-48 max-w-7xl px-2 sm:px-4 lg:px-12 xl:max-w-screen-xl '>
         {/* title */}
         <div className='app__hero-title '> 
           <div className='pt-8'>
@@ -34,14 +34,36 @@ function Hero() {
               <div class="col-span-4 row-span-4 grid-box-7 center-image"></div>
               <div class="col-span-7 row-span-5 grid-box-8 center-image"></div>
               <div class="col-span-2 row-span-3 grid-box-9 center-image"></div>
-              {/* grid button */}
+            
               <div class="col-span-5 row-span-1 mt-5 w-full">
                 <a href="#/" class=" rounded-full bg-indigo-600 px-10 py-4 mt-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn more</a>
               </div>
             </div>
           </div>
-      </section>
-    </>
+           {/* <div className='app__hero-photoBox  mx-auto overflow-hidden mt-8'>
+            <div class="app__hero-photoWall overflow-hidden">
+              <div class="invisible sm:visible grid-box-1">
+                <p>Use mixed grid with imagery, replace with your own photos and descriptions</p>
+              </div>
+              <div class="grid-box-2 center-image"></div>
+              <div class="invisible sm:visible"></div>
+              <div class="invisible sm:visible">
+                <p>This is multipurpose grid, it fits for portfolio, services or agency web site</p>
+              </div>
+              <div class="grid-box-4 center-image"></div>
+              <div class="grid-box-5 center-image"></div>
+              <div class="grid-box-6 center-image"></div>
+              <div class="grid-box-7 center-image"></div>
+              <div class="grid-box-8 center-image"></div>
+              <div class="grid-box-9 center-image"></div>
+            
+              <div class="col-span-5 row-span-1 mt-5 w-full">
+                <a href="#/" class=" rounded-full bg-indigo-600 px-10 py-4 mt-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Learn more</a>
+              </div>
+            </div>
+          </div> */}
+      </div>
+    </section>
   )
 }
 

@@ -1,9 +1,16 @@
-
-.app__hero{
-    // width: 100vw;
-    // background-image: url(../../assets/images/hero-background2.jpg);
-    background-size: cover;
+.app__hero-section{
+    background-image: url(../../assets/images/hero-bg-mobile.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: 0 -25vh;
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../../assets/images/hero-bg.svg);
+        background-size: contain;
+        background-position: top right;
+    }
+}
+.app__hero{
     z-index: 1;
 }
 .app__hero-title{
@@ -25,7 +32,16 @@
         margin-left: 0%;
     }
     
+    // grid-template-columns: 0.25fr 0.25fr 0.18fr 0.16fr 0.16fr;
+    // grid-template-rows: 155px;
+    // gap: 30px;
+    // grid-template-areas: 
+    // "content1 image1 image1 content2 content2"
+    // "content1 image1 image1 image2 image3"
+    // "content1 image4 image5 image5 content6"
     
+    
+    // ;
     
 }
 .grid-box-2{
