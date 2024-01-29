@@ -1,4 +1,4 @@
-# Website Landing page design with React and Tailwind CSS 🌦
+# Website Landing page design with React and Tailwind CSS
 <p align="center">
  <img width="500" alt="WX20231031-100421@2x" src="src/assets/images/heropage.png">
 </p>
