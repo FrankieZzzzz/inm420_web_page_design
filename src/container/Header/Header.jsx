@@ -10,10 +10,10 @@ import { faTable } from '@fortawesome/free-solid-svg-icons'
 
 
 const navigation = [
-  { name: 'How it works', href: '#', current: true },
-  { name: 'Who we are', href: '#', current: false },
-  { name: 'What we do', href: '#', current: false },
-  { name: 'Contact us', href: '#', current: false },
+  { name: 'How it works', href: '#hero', current: true },
+  { name: 'Who we are', href: '#detail', current: false },
+  { name: 'What we do', href: '#price', current: false },
+  { name: 'Contact us', href: '#footer', current: false },
 ]
 
 function classNames(...classes) {
@@ -30,7 +30,6 @@ function Header() {
               {/* Mobile menu button*/}
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (

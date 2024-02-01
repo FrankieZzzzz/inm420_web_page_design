@@ -12,6 +12,84 @@
 }
 .app__hero{
     z-index: 1;
+    .text_one{
+        position: relative;
+        z-index: 10;
+    }
+    .text_one::before{
+        content: 'Combine';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        z-index: -1;
+        color: white;
+        width: 100%;
+        font-weight: bold;
+        font-size: 60px;
+        letter-spacing: 2px;
+
+        @media screen and (min-width: 640px){
+            font-size: 72px;
+            top:13px;
+            
+        }
+    }
+    .text_two {
+        position: relative;
+        z-index: 10;
+
+        .text_underline{
+            position: absolute;
+            bottom: -3px;
+            left: 0px;
+            width: 100%;
+            height: 35px;
+            background-color: #55EFC4;
+            z-index: -2;
+            border-radius: 100px;
+
+        }
+    }
+    .text_two::before {
+        content: 'fine';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: -1;
+        color: white;
+        width: 100%;
+        font-weight: bold;
+        font-size: 48px;
+
+
+        @media screen and (min-width: 640px) {
+            font-size: 72px;
+            top: 13px;
+
+        }
+    }
+    .text_three {
+        position: relative;
+        z-index: 10;
+        display: block;
+    }
+    .text_three::before {
+        content: 'image';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        z-index: -1;
+        color: white;
+        width: 100%;
+        font-weight: bold;
+        font-size: 48px;
+
+        @media screen and (min-width: 640px) {
+            font-size: 72px;
+            top: 5px;
+
+        }
+    }
 }
 .app__hero-title{
     width: 100%;
@@ -20,32 +98,49 @@
 .app__hero-photoWall{
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(18, 80px);
-    grid-template-rows: repeat(12, 1fr);
-    margin-left: -200%;
+    grid-template-columns: repeat(18, 35px);
+    grid-template-rows: repeat(12, 0.7fr);
+    margin-left: -50%;
     div {
             border-radius: 12px;
         };
+    @media screen and (min-width: 600px) {
+        margin-left: -10%;
+    }
     @media screen and (min-width: 768px){
-        grid-template-columns: repeat(18, 50px);
-        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(18, 56px);
+        grid-template-rows: repeat(12, 1.2fr);
+        margin-left: -50%;
+    }
+    @media screen and (min-width: 900px) {
+        margin-left: -20%;
+    }
+    @media screen and (min-width: 1100px) {
         margin-left: 0%;
     }
-    
-    // grid-template-columns: 0.25fr 0.25fr 0.18fr 0.16fr 0.16fr;
-    // grid-template-rows: 155px;
-    // gap: 30px;
-    // grid-template-areas: 
-    // "content1 image1 image1 content2 content2"
-    // "content1 image1 image1 image2 image3"
-    // "content1 image4 image5 image5 content6"
-    
-    
-    // ;
-    
+
 }
 .grid-box-2{
     background-image: url(../../assets/images/image2.jpg);
+    position: relative;
+    .grid-box-2-text{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 10px;
+    }
+    .grid-box-2-text2{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 15px;
+    }
 }
 .grid-box-3{
     background-image: url(../../assets/images/image2.jpg);
@@ -64,6 +159,16 @@
 }
 .grid-box-8{
     background-image: url(../../assets/images/image8.jpg);
+    position: relative;
+    .grid-box-2-text {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 10px;
+    }
 }
 .grid-box-9{
     background-image: url(../../assets/images/image9.jpg);
